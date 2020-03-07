@@ -1,4 +1,4 @@
-export const products = [
+export const products: { name: string; price: number; description: string; }[] = [
     {
       name: "Phone XL",
       price: 799,
