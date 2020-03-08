@@ -13,4 +13,9 @@ export class CartService {
   getItems(): { name: string; price: number; description: string; }[] {
     return this.items;
   }
+
+  clearCart(): { name: string; price: number; description: string; }[] {
+    this.items = [];
+    return this.items;
+  }
 }
