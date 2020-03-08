@@ -9,4 +9,8 @@ export class CartService {
   addToCart(product: { name: string; price: number; description: string; }): void {
     this.items.push(product);
   }
+
+  getItems(): { name: string; price: number; description: string; }[] {
+    return this.items;
+  }
 }
