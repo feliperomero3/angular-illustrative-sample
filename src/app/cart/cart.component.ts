@@ -24,4 +24,12 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.getItems();
   }
 
+  onSubmit(customerData: any): void {
+    // Process checkout data here
+    this.items = this.cartService.clearCart();
+    this.checkoutForm.reset();
+
+    console.warn("Your order has ee sumited", customerData);
+  }
+
 }
