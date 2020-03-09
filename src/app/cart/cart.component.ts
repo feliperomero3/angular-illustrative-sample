@@ -9,6 +9,7 @@ import { FormBuilder } from "@angular/forms";
 })
 export class CartComponent implements OnInit {
   items: { name: string; price: number; description: string; }[];
+  checkoutForm: any;
 
   constructor(
     private cartService: CartService,
