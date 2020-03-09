@@ -4,8 +4,7 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 
 @Component({
   selector: "app-cart",
-  templateUrl: "./cart.component.html",
-  styleUrls: ["./cart.component.css"]
+  templateUrl: "./cart.component.html"
 })
 export class CartComponent implements OnInit {
   items: { name: string; price: number; description: string; }[];
@@ -29,7 +28,7 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
 
-    console.warn("Your order has ee sumited", customerData);
+    console.warn("Your order has been submited", customerData);
   }
 
 }
