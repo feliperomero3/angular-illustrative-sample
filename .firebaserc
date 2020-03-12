@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-ilustrative-sample": {
+      "hosting": {
+        "angular-ilustrative-sample": [
+          "angular-ilustrative-sample"
+        ]
+      }
+    }
+  }
+}
